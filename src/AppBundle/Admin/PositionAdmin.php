@@ -14,7 +14,6 @@ class PositionAdmin extends AbstractAdmin
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)
     {
         $datagridMapper
-            ->add('id')
             ->add('position')
         ;
     }
@@ -36,7 +35,6 @@ class PositionAdmin extends AbstractAdmin
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper
-            ->add('id')
             ->add('position')
         ;
     }

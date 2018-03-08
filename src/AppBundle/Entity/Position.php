@@ -109,7 +109,7 @@ class Position
         return $this->user;
     }
 
-    public function __toString() {
+    /*public function __toString() {
         return $this->getPosition();
-    }
+    }*/
 }
