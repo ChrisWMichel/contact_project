@@ -1,0 +1,14 @@
+services:
+    app.admin.users:
+        class: AppBundle\Admin\UsersAdmin
+        arguments: [~, AppBundle\Entity\Users, SonataAdminBundle:CRUD]
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: admin, label: Users }
+        public: true
+
+    app.admin.position:
+        class: AppBundle\Admin\PositionAdmin
+        arguments: [~, AppBundle\Entity\Position, SonataAdminBundle:CRUD]
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: admin, label: Position }
+        public: true
