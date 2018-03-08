@@ -23,8 +23,8 @@ class UsersAdmin extends AbstractAdmin
             ->add('email')
             ->add('position', null, [], EntityType::class,
               [
-               /* 'class' => Position::class,
-                'choice_label' => 'poSition'*/
+                'class' => Position::class,
+                'choice_label' => 'poSition'
               ])
         ;
     }
